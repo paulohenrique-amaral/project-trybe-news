@@ -8,14 +8,12 @@ import { Divcontainer, DivcontainerBtn } from '../components/styles/HomeStyled';
 function Home() {
   const urlBase = 'http://servicodados.ibge.gov.br/api/v3/noticias';
   const { isLoading, fetchApi } = useContext(UserContext);
-  // const [newsType, setNewsType] = useState('recentes');
 
   useEffect(() => {
     fetchApi(`${urlBase}/?qtd=200`);
   }, []);
 
   const handleButtonClick = async (type: string) => {
-    // setNewsType(type);
     if (type !== '') {
       const endpoint = getEndpointForNewsType(type);
       fetchApi(endpoint);

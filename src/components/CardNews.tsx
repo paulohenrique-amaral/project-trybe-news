@@ -49,19 +49,22 @@ function CardNews() {
   };
   return(
     <DivContainer>
-      { newsResult.slice(0, currentPage).map((item: NewsItems) => {
-        const imagensJSON = JSON.parse(item.imagens);       
-        const urlImagemIntro = imagensJSON.image_intro;
+      { newsResult.slice(0, currentPage).map((item: NewsItems) => {  
+        const urlImagemIntro = JSON.parse(item.imagens).image_intro;
+
         const dataAtual = new Date();
-        const dataSplit = item.data_publicacao.split('/');        
+
+        const dataSplit = item.data_publicacao.split('/');
         const day = parseInt(dataSplit[0]);
         const month = parseInt(dataSplit[1]);
         const year = dataSplit[2].split(' ');
         const yearNumeric = parseInt(year[0], 10);
+
         const dataPublicacao = new Date(yearNumeric, month - 1, day);
         const umDiaEmMilissegundos = 1000 * 60 * 60 * 24;
         const diferencaEmMilissegundos = Math.abs(dataAtual.getTime() - dataPublicacao.getTime());
         const diferencaEmDias = Math.ceil(diferencaEmMilissegundos / umDiaEmMilissegundos);
+
         const isFavorite = favorites.some((objeto) => objeto.id === item.id);
         return (
           <div

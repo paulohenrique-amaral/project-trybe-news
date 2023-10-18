@@ -51,8 +51,12 @@ describe('Verifica componente Header', () => {
       await act(async () => {
         await userEvent.click(button);
       });
-    } catch (error:any) {
-      expect(error.message).toBe('Sem resultados para busca');
+    } catch (error:unknown) {
+      if (typeof error === 'object' && error instanceof Error && error.message === 'Sem resultados para busca') {
+        expect(error.message).toBe('Sem resultados para busca');
+      } else {
+        throw error;
+      }
     }
   });
 });
