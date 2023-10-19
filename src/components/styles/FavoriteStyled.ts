@@ -10,7 +10,7 @@ export const Divcontainer = styled.div`
     font-size: 1.5rem;
     gap: 0.5rem;
   }
-  @media screen and (max-width: 512px) {
+  @media screen and (max-width: 768px) {
     justify-content: center;
     align-items: center;
     & a {

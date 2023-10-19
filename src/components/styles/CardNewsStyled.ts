@@ -49,13 +49,18 @@ export const DivContainer = styled.div`
     background-color: #E8E8E8;
     border: 2px solid #EFC026;
   }
-  @media screen and (max-width: 512px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     max-width: 100%;
     padding: 0.8rem;
     gap: 1rem;    
     & div {
     width: 100%;
+    & img {
+      max-width: 90%;
+      margin: auto;
+      margin-bottom: 1rem;
+      }
     }
   }  
 `

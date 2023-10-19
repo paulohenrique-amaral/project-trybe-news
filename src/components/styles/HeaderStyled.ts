@@ -26,8 +26,19 @@ export const NavStyled = styled.nav`
     color: #ffffff;
     font-family: Audiowide;
     font-size: 2rem;
-  }
+  }  
   & form button {
+    @keyframes wobble-hor-bottom {
+      0% {
+    transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
     background-color: #EFC026;
     border: 2px solid #EFC026;
     border-radius: 4px;
@@ -42,8 +53,9 @@ export const NavStyled = styled.nav`
   & form button:hover {
     background-color: transparent;
     color: #EFC026;
+    animation: wobble-hor-bottom 1s ease-in-out infinite;
   }
-  @media screen and (max-width: 512px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -52,5 +64,9 @@ export const NavStyled = styled.nav`
     & h2 {
     font-size: 1rem;
   }
+  & form button:hover {
+    animation: none;
   }
+  }
+
 `

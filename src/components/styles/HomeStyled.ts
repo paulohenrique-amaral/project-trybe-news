@@ -27,7 +27,7 @@ export const DivcontainerBtn = styled.div`
       border-radius: 4px;
     }
   }
-  @media screen and (max-width: 512px) {
+  @media screen and (max-width: 768px) {
     & button {
       margin: .2rem;
       font-size: .8rem;
