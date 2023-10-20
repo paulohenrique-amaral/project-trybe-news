@@ -1,27 +1,37 @@
-# React + TypeScript + Vite
+<h1 align="center">:file_cabinet: Projeto Trybe News</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## :memo: Descrição
+Este projeto Trybe News é uma aplicação que coleta dados de notícias de uma API do IBGE e oferece aos usuários uma interface amigável para interagir com as notícias de forma fluída. Com uma combinação de tecnologias modernas, este aplicativo permite aos usuários acessar notícias e explorar uma ampla gama de informações de maneira intuitiva.
 
-Currently, two official plugins are available:
+## :books: Funcionalidades
+* <b>Mais Recentes</b>: Filtra e mostra as notícias e release mais recentes.
+* <b>Release</b>: Filtra e mostra somente os Destaques das notícias.
+* <b>Notícias</b>: Filtra e mostra todas as notícias, inicias das mais recentes para as mais antigas.
+* <b>Favoritos</b>: Exibe somente as notícias ou releases que foram favoritados.
+* <b>Campo Buscar</b>: Opção onde o possível realizar uma busca de notícias com base em um termo de pesquisa.
+## :wrench: Tecnologias utilizadas
+* React;
+* TypeScript;
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## :rocket: Rodando o projeto
+Siga as instruções abaixo para configurar e executar o projeto:
+Clone o repositório em sua máquina local.
+```
+<git clone -link-do-repositório->Clone o repositório em sua máquina local.
+<npm install> para instalar as dependências.
+<npm start>para iniciar o servidor de desenvolvimento.
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## :handshake: Desenvolvedor
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/paulohenrique-amaral">
+        <img src="https://avatars.githubusercontent.com/u/131374458?s=48&v=4" width="100px;" alt="Foto de Paulo Amaral no GitHub"/><br>
+        <sub>
+          <b>Paulo Amaral</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
